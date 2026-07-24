@@ -1,0 +1,8 @@
+{
+  "kpis": [
+    { "title": "Global Ocean Health Index", "value": "78", "unit": "/100", "trend": "up", "change": "+2%" },
+    { "title": "Active Alerts", "value": "12", "unit": "", "trend": "down", "change": "-3" },
+    { "title": "Sensors Online", "value": "14,092", "unit": "", "trend": "up", "change": "+156" },
+    { "title": "Plastics Detected (30d)", "value": "4.2", "unit": "k tons", "trend": "up", "change": "+0.5k" }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "alerts": [
+    {
+      "id": "A-1023",
+      "type": "Pollution",
+      "severity": "critical",
+      "coordinates": [35.0, -140.0],
+      "title": "High Plastic Density Detected",
+      "description": "Unusually high concentration of microplastics detected in the North Pacific Gyre current.",
+      "timestamp": "2024-05-14T08:30:00Z"
+    },
+    {
+      "id": "A-1024",
+      "type": "Coral",
+      "severity": "warning",
+      "coordinates": [-18.2871, 147.6992],
+      "title": "Bleaching Alert Level 1",
+      "description": "Sea surface temperature anomalies detected over the Great Barrier Reef.",
+      "timestamp": "2024-05-14T02:15:00Z"
+    },
+    {
+      "id": "A-1025",
+      "type": "Illegal Activity",
+      "severity": "critical",
+      "coordinates": [-0.3718, -90.2714],
+      "title": "Suspected Illegal Dumping",
+      "description": "AIS dark target detected near Galapagos Marine Reserve.",
+      "timestamp": "2024-05-13T22:45:00Z"
+    }
+  ],
+  "sensors": [
+    { "id": "S-01", "coordinates": [21.3069, -157.8583], "status": "online", "reading": "pH 8.1" },
+    { "id": "S-02", "coordinates": [11.3493, 142.1996], "status": "online", "reading": "Temp 4°C" },
+    { "id": "S-03", "coordinates": [25.0, -71.0], "status": "online", "reading": "Salinity 35psu" }
+  ]
+}

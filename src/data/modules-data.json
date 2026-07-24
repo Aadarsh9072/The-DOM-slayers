@@ -1,0 +1,17 @@
+{
+  "species": [
+    { "id": "SP-01", "name": "Hawksbill Turtle", "scientific": "Eretmochelys imbricata", "status": "Critically Endangered", "trend": "down", "population": 25000, "image": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&q=80&w=800" },
+    { "id": "SP-02", "name": "Blue Whale", "scientific": "Balaenoptera musculus", "status": "Endangered", "trend": "up", "population": 15000, "image": "https://images.unsplash.com/photo-1568430462989-44163eb1752f?auto=format&fit=crop&q=80&w=800" },
+    { "id": "SP-03", "name": "Manta Ray", "scientific": "Manta birostris", "status": "Vulnerable", "trend": "down", "population": 80000, "image": "/images/manta-ray.avif" }
+  ],
+  "pollution": [
+    { "id": "P-101", "date": "2024-05-14", "type": "Microplastics", "density": "High", "region": "North Pacific Gyre", "detectedBy": "Drone-Alpha" },
+    { "id": "P-102", "date": "2024-05-13", "type": "Illegal Dumping", "density": "Critical", "region": "Mediterranean Sea", "detectedBy": "Satellite-V1" },
+    { "id": "P-103", "date": "2024-05-12", "type": "Ghost Nets", "density": "Medium", "region": "Great Barrier Reef", "detectedBy": "Sensor-S02" }
+  ],
+  "riskZones": [
+    { "region": "Coral Triangle", "score": 88, "threat": "Bleaching & Illegal Fishing", "trend": "+12%" },
+    { "region": "Caribbean Sea", "score": 75, "threat": "Microplastics & Hurricanes", "trend": "+5%" },
+    { "region": "Arctic Ocean", "score": 62, "threat": "Ice Melt & Shipping", "trend": "+18%" }
+  ]
+}

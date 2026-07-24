@@ -694,9 +694,13 @@ function LandingPage() {
           <ArticleRevealSection isHeroExpanded={isHeroExpanded} setIsHeroExpanded={setIsHeroExpanded} />
         </div>
       </div>
-      {/* ABOUT US */}
-      <section id="about" className="py-[var(--space-8)] px-6">
-        <div className="max-w-4xl mx-auto">
+      {/* ABOUT US — mid-ocean bg (manta ray) */}
+      <section id="about" className="py-[var(--space-8)] px-6 relative overflow-hidden">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <img src="/midocean-3.png" alt="" className="w-full h-full object-cover" aria-hidden="true" />
+          <div className="absolute inset-0 bg-[var(--surface-page)]" style={{ opacity: 0.80 }} />
+        </div>
+        <div className="max-w-4xl mx-auto relative z-10">
           <Reveal><p className="section-eyebrow text-center mb-4"><BlockRevealText text="About Our Team & Solution" delay={100} duration={800} /></p></Reveal>
           <ClipReveal delay={0.1}><h2 className="section-heading text-center mb-16"><BlockRevealText text="Dedicated to ocean conservation" delay={200} duration={1000} /></h2></ClipReveal>
           
@@ -721,6 +725,13 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* IMPACT + TESTIMONIALS — single continuous mid-ocean background (school of fish) */}
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <img src="/midocean-2.png" alt="" className="w-full h-full object-cover" aria-hidden="true" />
+          <div className="absolute inset-0 bg-[var(--surface-page)]" style={{ opacity: 0.72 }} />
+        </div>
+
       {/* IMPACT STATS */}
       <section id="impact" className="relative py-[var(--space-8)] px-6 overflow-hidden impact-section">
         <div className="impact-glow-left" />
@@ -738,8 +749,8 @@ function LandingPage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="py-[var(--space-8)] px-6 hairline-top">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-[var(--space-8)] px-6 relative">
+        <div className="max-w-4xl mx-auto relative z-10">
           <Reveal><p className="section-eyebrow mb-10">Testimonials</p></Reveal>
           <div className="space-y-12">
             {[
@@ -759,9 +770,17 @@ function LandingPage() {
           </div>
         </div>
       </section>
+      </div>{/* end Impact+Testimonials shared background */}
+
+      {/* CTA + FOOTER — deep ocean floor background at the very bottom */}
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <img src="/dashboard-bg.png" alt="" className="w-full h-full object-cover" aria-hidden="true" />
+          <div className="absolute inset-0 bg-[var(--surface-page)]" style={{ opacity: 0.55 }} />
+        </div>
 
       {/* CTA */}
-      <section className="py-[var(--space-8)] px-6">
+      <section className="py-[var(--space-8)] px-6 relative z-10">
         <Reveal>
           <div className="max-w-3xl mx-auto rounded-3xl overflow-hidden relative cta-card">
             <div className="absolute inset-0 z-0">
@@ -783,12 +802,13 @@ function LandingPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="py-10 px-6 hairline-top">
+      <footer className="py-10 px-6 hairline-top relative z-10">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[var(--text-secondary)]">
           <span className="font-sans font-bold text-[var(--text-primary)]">DeepSea Guardian</span>
           <span>© 2026 DeepSea Guardian. All rights reserved.</span>
         </div>
       </footer>
+      </div>{/* end deep ocean floor wrapper */}
     </div>
     </LayoutGroup>
   );

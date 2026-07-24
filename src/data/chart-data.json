@@ -1,0 +1,16 @@
+{
+  "healthTrend": [
+    { "month": "Jan", "healthIndex": 72, "pollutionLevel": 45 },
+    { "month": "Feb", "healthIndex": 71, "pollutionLevel": 48 },
+    { "month": "Mar", "healthIndex": 74, "pollutionLevel": 40 },
+    { "month": "Apr", "healthIndex": 75, "pollutionLevel": 38 },
+    { "month": "May", "healthIndex": 78, "pollutionLevel": 32 },
+    { "month": "Jun", "healthIndex": 78, "pollutionLevel": 30 }
+  ],
+  "alertDistribution": [
+    { "name": "Plastic Waste", "value": 45 },
+    { "name": "Coral Bleaching", "value": 30 },
+    { "name": "Illegal Fishing", "value": 15 },
+    { "name": "Oil Spill", "value": 10 }
+  ]
+}
